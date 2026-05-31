@@ -94,18 +94,87 @@ nvim
 
 ## 快捷键
 
-Leader 键是空格。
+Leader 键是空格，Local Leader 是反斜杠 `\`。
+
+### 基础操作
 
 | 快捷键 | 功能 |
 | --- | --- |
 | `<leader>w` | 保存当前文件 |
 | `<leader>q` | 关闭当前窗口 |
-| `<leader>z` | 打开或聚焦 Neo-tree 文件树 |
-| `<leader>ff` | 使用 Telescope 查找文件 |
-| `<leader>fg` | 使用 Telescope 全文搜索 |
-| `<leader>fb` | 使用 Telescope 查看 Buffer |
-| `<leader>fh` | 使用 Telescope 查看帮助文档 |
+| `<leader>Q` | 退出 Neovim |
+| `<leader>h` | 清除搜索高亮 |
+
+### 窗口与 Buffer
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `<C-h>` | 切换到左侧窗口 |
+| `<C-j>` | 切换到下方窗口 |
+| `<C-k>` | 切换到上方窗口 |
+| `<C-l>` | 切换到右侧窗口 |
+| `<leader>sv` | 垂直分屏 |
+| `<leader>sh` | 水平分屏 |
+| `<S-l>` | 切换到下一个 Buffer |
+| `<S-h>` | 切换到上一个 Buffer |
+| `<leader>bd` | 关闭当前 Buffer |
+| `<leader>bp` | 使用 Bufferline 选择 Buffer |
+
+### 文件树
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `<leader>e` | 打开或关闭 Neo-tree，并定位到当前文件 |
+
+### Telescope
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `<leader>ff` | 查找文件 |
+| `<leader>fg` | 全文搜索 |
+| `<leader>fb` | 查看 Buffer |
+| `<leader>fh` | 查看帮助文档 |
+| `<leader>fr` | 查看最近文件 |
+| `<leader>fs` | 在当前文件内搜索 |
+| `<leader>fc` | 查找命令 |
+| `<leader>fk` | 查找快捷键 |
+
+### Git
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `<leader>gs` | 暂存当前或选中的 Git hunk |
+| `<leader>gr` | 撤销当前或选中的 Git hunk |
+| `<leader>gp` | 预览当前 Git hunk |
+| `<leader>gb` | 查看当前行 Git blame |
+| `]g` | 跳到下一个 Git hunk |
+| `[g` | 跳到上一个 Git hunk |
+
+### LSP 与诊断
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `gd` | 跳转到定义 |
+| `gr` | 查看引用 |
+| `gi` | 跳转到实现 |
+| `gt` | 跳转到类型定义 |
+| `K` | 显示悬浮文档 |
+| `<leader>rn` | 重命名符号 |
+| `<leader>ca` | 代码操作 |
+| `<leader>ld` | 显示当前行诊断 |
+| `<leader>ll` | 查看全部诊断 |
+| `]d` | 跳到下一个诊断 |
+| `[d` | 跳到上一个诊断 |
+
+### 终端与可视模式
+
+| 快捷键 | 功能 |
+| --- | --- |
+| `<leader>tt` | 打开或关闭浮动终端 |
 | `<C-\>` | 打开或关闭浮动终端 |
+| `<Esc>` | 在终端中退出插入模式 |
+| `J` | 在可视模式中向下移动选中行 |
+| `K` | 在可视模式中向上移动选中行 |
 
 ## 目录结构
 
