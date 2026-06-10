@@ -12,7 +12,7 @@ vim.g.neovide_scale_factor = 1.0
 
 -- 字体伽马值和对比度
 vim.g.neovide_text_gamma = 0.0
-vim.g.neovide_text_contrast = 0.5
+vim.g.neovide_text_contrast = 0.8
 
 -- 内边距
 vim.g.neovide_padding_top = 0
@@ -27,7 +27,7 @@ vim.g.neovide_opacity = 0.9
 vim.g.neovide_hide_mouse_when_typing = true
 
 -- 系统主题
-vim.o.background = "dark"
+vim.o.background = "light"
 vim.g.neovide_theme = "auto"
 
 -- 全屏启动
