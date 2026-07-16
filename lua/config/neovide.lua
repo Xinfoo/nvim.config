@@ -21,13 +21,13 @@ vim.g.neovide_padding_right = 0
 vim.g.neovide_padding_left = 0
 
 -- 透明度
-vim.g.neovide_opacity = 0.9
+vim.g.neovide_opacity = 0.8
 
 -- 键盘输入时隐藏鼠标
-vim.g.neovide_hide_mouse_when_typing = true
+vim.g.neovide_hide_mouse_when_typing = false
 
 -- 系统主题
-vim.o.background = "light"
+vim.o.background = "dark"
 vim.g.neovide_theme = "auto"
 
 -- 全屏启动
