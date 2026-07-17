@@ -16,6 +16,13 @@ require("neo-tree").setup({
     close_if_last_window = true,
     window = {
         position = "left",
+    },
+    filesystem = {
+        filtered_items = {
+            visible = false,
+            hide_dotfiles = false,
+            hide_gitignored = false,
+        }
     }
 })
 
@@ -55,7 +62,7 @@ require("toggleterm").setup({
   float_opts = {
     border = "curved", -- 边框样式：'single', 'double', 'shadow', 'curved'
     winblend = 3,      -- 稍微有一点点透明度，更有质感
-  },
+  }
 })
 
 -- 全局搜索支持
