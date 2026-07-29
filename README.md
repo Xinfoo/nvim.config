@@ -147,6 +147,10 @@ Leader 键是空格，Local Leader 是反斜杠 `\`。
 | `<leader>gr` | 撤销当前或选中的 Git hunk |
 | `<leader>gp` | 预览当前 Git hunk |
 | `<leader>gb` | 查看当前行 Git blame |
+| `<leader>gl` | 打开 LazyGit |
+| `<leader>gd` | 打开 Git 差异视图 |
+| `<leader>gh` | 查看当前文件 Git 历史 |
+| `<leader>gq` | 关闭 Git 差异视图 |
 | `]g` | 跳到下一个 Git hunk |
 | `[g` | 跳到上一个 Git hunk |
 
