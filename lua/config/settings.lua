@@ -11,62 +11,11 @@ require("lualine").setup({
     }
 })
 
--- 文件树
-require("neo-tree").setup({
-    close_if_last_window = true,
-    window = {
-        position = "left",
-    },
-    filesystem = {
-        filtered_items = {
-            visible = false,
-            hide_dotfiles = false,
-            hide_gitignored = false,
-        }
-    }
-})
-
 -- 启动标签页
 require("alpha").setup(require("alpha.themes.dashboard").config)
 
 -- Git变动显示
 require("gitsigns").setup({})
-
--- 浮动终端支持
-require("toggleterm").setup({
-  -- 尺寸设置：如果是水平/垂直分割时占的大小
-  size = function(term)
-    if term.direction == "horizontal" then
-      return 15
-    elseif term.direction == "vertical" then
-      return vim.o.columns * 0.4
-    end
-  end, 
-
-  -- 开启快捷键：Ctrl + \
-  open_mapping = [[<c-\>]],
-
-  -- 默认进入插入模式
-  start_in_insert = true,
-  insert_mappings = true,   -- 允许在插入模式下使用 open_mapping
-  terminal_mappings = true, -- 允许在终端模式下使用 open_mapping
-  persist_size = true,
-  
-  -- 窗口样式：浮动
-  direction = "float", 
-  
-  close_on_exit = true, -- 进程退出后自动关闭窗口
-  shell = vim.o.shell,  -- 使用系统默认 shell
-  
-  -- 浮动窗口具体配置
-  float_opts = {
-    border = "curved", -- 边框样式：'single', 'double', 'shadow', 'curved'
-    winblend = 3,      -- 稍微有一点点透明度，更有质感
-  }
-})
-
--- 全局搜索支持
-require("telescope").setup({})
 
 -- 多标签页支持
 require("bufferline").setup({
